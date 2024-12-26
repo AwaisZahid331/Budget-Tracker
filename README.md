@@ -1,148 +1,125 @@
-Budget Tracker Full-Stack Application
+# Budget Tracker Full-Stack Application
 
-This is a full-stack budget tracking application designed to help users manage their income and expenses efficiently. The project uses the MERN stack (MongoDB, Express.js, React.js, Node.js) and is hosted live using GitHub and Vercel.
+This is a **full-stack budget tracking application** designed to help users manage their income and expenses efficiently. The project uses the **MERN stack** (MongoDB, Express.js, React.js, Node.js) and is hosted live using GitHub and Vercel.
 
-##Features
+---
 
-Add Transactions: Categorize transactions as either income or expenses.
+## Features
+- **Add Transactions**: Categorize transactions as either income or expenses.
+- **View Transactions**: Display a list of all transactions with details like title, amount, category, and type.
+- **Delete Transactions**: Remove unwanted transactions easily.
+- **Track Balance**: View total income, expenses, and the current balance.
+- **Responsive Design**: Works on desktop, tablet, and mobile devices.
 
-View Transactions: Display a list of all transactions with details like title, amount, category, and type.
+---
 
-Delete Transactions: Remove unwanted transactions easily.
+## Tech Stack
 
-Track Balance: View total income, expenses, and the current balance.
+### Frontend
+- **React.js**: Dynamic user interface.
+- **Bootstrap**: Responsive and styled components.
 
-Responsive Design: Works on desktop, tablet, and mobile devices.
+### Backend
+- **Node.js**: Server-side environment.
+- **Express.js**: Backend framework for routing and APIs.
 
-Tech Stack
+### Database
+- **MongoDB**: Stores transaction data.
 
-Frontend
+### Hosting
+- **GitHub**: Code repository.
+- **Vercel**: Live hosting of the frontend.
 
-React.js: Dynamic user interface.
+---
 
-Bootstrap: Responsive and styled components.
+## Installation and Setup
 
-Backend
+### Prerequisites
+- **Node.js** and **npm** installed on your system.
+- **MongoDB** database (local or cloud).
 
-Node.js: Server-side environment.
+### Steps
 
-Express.js: Backend framework for routing and APIs.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/<your-username>/Budget-Tracker.git
+   cd Budget-Tracker
+   ```
 
-Database
+2. Install dependencies for both client and server:
+   ```bash
+   cd client
+   npm install
+   cd ../server
+   npm install
+   ```
 
-MongoDB: Stores transaction data.
+3. Create an `.env` file in the `server` directory and add:
+   ```env
+   MONGO_URI=<your-mongodb-connection-string>
+   PORT=5000
+   ```
 
-Hosting
+4. Start the application:
+   - Backend: `npm start` (from `server` directory)
+   - Frontend: `npm start` (from `client` directory)
 
-GitHub: Code repository.
+5. Access the app at `http://localhost:3000`.
 
-Vercel: Live hosting of the frontend.
+---
 
-Installation and Setup
+## APIs Used
 
-Prerequisites
+### Transactions API
+- **POST** `/transactions` - Add a transaction.
+- **GET** `/transactions` - Fetch all transactions.
+- **DELETE** `/transactions/:id` - Delete a transaction.
 
-Node.js and npm installed on your system.
+---
 
-MongoDB database (local or cloud).
+## Example Usage
 
-Steps
+### Adding a Transaction:
+| Title        | Amount | Category | Type     |
+|--------------|--------|----------|----------|
+| Shopping     | 2000   | Personal | Expense  |
+| Freelancing  | 5000   | Work     | Income   |
 
-Clone the repository:
+### Display:
+- **Balance**: Automatically calculates total income and expenses.
 
-git clone https://github.com/<your-username>/Budget-Tracker.git
-cd Budget-Tracker
+---
 
-Install dependencies for both client and server:
+## Live Demo
+[Click here to view the app](https://<your-vercel-url>.vercel.app)
 
-cd client
-npm install
-cd ../server
-npm install
+---
 
-Create an .env file in the server directory and add:
+## Screenshots
 
-MONGO_URI=<your-mongodb-connection-string>
-PORT=5000
+1. **Home Page**
+   ![Home Page](https://via.placeholder.com/800x400?text=Home+Page+Screenshot)
 
-Start the application:
+2. **Add Transaction Form**
+   ![Form](https://via.placeholder.com/800x400?text=Add+Transaction+Screenshot)
 
-Backend: npm start (from server directory)
+3. **Transaction List**
+   ![List](https://via.placeholder.com/800x400?text=Transaction+List+Screenshot)
 
-Frontend: npm start (from client directory)
+---
 
-Access the app at http://localhost:3000.
+## Future Improvements
+- Implement user authentication.
+- Add transaction filtering and search functionality.
+- Generate reports and graphs for better analysis.
 
-APIs Used
+---
 
-Transactions API
-
-POST /transactions - Add a transaction.
-
-GET /transactions - Fetch all transactions.
-
-DELETE /transactions/:id - Delete a transaction.
-
-Example Usage
-
-Adding a Transaction:
-
-Title
-
-Amount
-
-Category
-
-Type
-
-Shopping
-
-2000
-
-Personal
-
-Expense
-
-Freelancing
-
-5000
-
-Work
-
-Income
-
-Display:
-
-Balance: Automatically calculates total income and expenses.
-
-Live Demo
-
-Click here to view the app
-
-Screenshots
-
-Home Page
-
-
-Add Transaction Form
-
-
-Transaction List
-
-
-Future Improvements
-
-Implement user authentication.
-
-Add transaction filtering and search functionality.
-
-Generate reports and graphs for better analysis.
-
-Contributing
-
+## Contributing
 Feel free to fork the repository and submit pull requests with improvements or bug fixes.
 
-License
+---
 
+## License
 This project is open-source and available under the MIT License.
 
